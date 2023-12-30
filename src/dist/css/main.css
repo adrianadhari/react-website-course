@@ -1,0 +1,332 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #f6f8fd;
+    --secondary-color: #dc3545;
+    --color-text: #231942;
+    --navbar-color: #ffffff;
+    --navbar-color-text: #000000;
+}
+
+.navbar {
+    position: fixed;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 999;
+    transition: 0.4s ease;
+    background-color: transparent;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+}
+
+.navbar.color-active {
+    background-color: var(--navbar-color);
+    border-bottom: 2px solid #dc354663;
+}
+.navbar .navbar-nav a {
+    text-decoration: none;
+    color: var(--navbar-color-text);
+    padding: 5px 10px;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--secondary-color);
+}
+
+.navbar .navbar-nav .active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.navbar .navbar-nav .active:hover {
+    color: var(--navbar-color);
+}
+
+header {
+    background: #c6ffdd; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+}
+
+.header-box h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--color-text);
+    --animate-delay: 0.6s;
+}
+
+.header-box span {
+    font-weight: 700;
+}
+
+.header-box p {
+    line-height: 2;
+    color: var(--color-text);
+    font-weight: 500;
+    --animate-delay: 1s;
+}
+.header-box button {
+    --animate-delay: 1.3s;
+}
+
+.header-box img {
+    width: 100%;
+}
+
+.homepage .kelas {
+    background-color: var(--primary-color);
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.homepage .kelas h1, p {
+    color: var(--color-text);
+}
+
+.homepage .kelas h5 {
+    color: var(--color-text);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+/* Testimonial */
+.homepage .testimonial {
+    background-color: var(--primary-color);
+}
+
+.homepage .testimonial h1{
+    color: var(--color-text);
+}
+.homepage .testimonial .swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  
+  .homepage .testimonial .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    padding: 20px;
+  
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+  }
+
+.homepage .testimonial .swiper-slide:active {
+    cursor: grabbing;  
+}
+
+.homepage .testimonial .swiper-slide .desc {
+    color: var(--color-text);
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.homepage .testimonial .swiper-slide .people {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.homepage .testimonial .swiper-slide .people p, h5 {
+    color: var(--color-text);
+}
+.homepage .testimonial .swiper-slide .people p {
+    opacity: 50%;
+}
+.homepage .testimonial .swiper-slide .people img {
+    width: 80px;
+    border-radius: 100%;
+}
+/* Testimonial */
+
+
+/* FAQ */
+.faq {
+    background-color: var(--primary-color);
+    padding: 140px 0;
+}
+.faq h1 {
+    --animate-delay: 0.2s;
+}
+.faq h2 {
+    color: var(--color-text);
+}
+
+.faq .accordion .accordion-button {
+    color: var(--color-text);
+    font-weight: bold;
+    background-color: #fff;
+}
+.faq .accordion .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+/* FAQ */
+
+
+
+/* Kelas */
+.kelas {
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+    color: var(--color-text);
+}
+.kelas .anjay {
+    --animate-delay: 0.2s;
+}
+/* Kelas */
+
+/* Testimonial */
+.testimonial {
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+    color: var(--color-text);
+}
+
+.testimonial .title{
+    --animate-delay: 0.2s;
+}
+
+.testimonial .anjay{
+    --animate-delay: 0.6s;
+}
+
+/* SyaratKetentuan */
+.syarat-ketentuan {
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+    color: var(--color-text);
+}
+.syarat-ketentuan .title {
+    --animate-delay: 0.2s;
+}
+.syarat-ketentuan .anjay {
+    --animate-delay: 0.6s;
+}
+/* SyaratKetentuan */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    min-height: 30vh;
+}
+
+.footer h3 {
+    color: var(--color-text);
+}
+
+.footer .desc {
+    color: var(--color-text);
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .nomor a, .footer .email a{
+    display: flex;
+    align-items: center;
+    color: black;
+    column-gap: 5px;
+}
+.footer .nomor a:hover, .footer .email a:hover{
+    color: var(--secondary-color) !important;
+}
+.footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.footer a:hover  {
+    color: var(--secondary-color);
+}
+.footer .subscribes {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.footer .subscribes input {
+    width: 200px;
+    height: 38px;
+    padding: 5px;
+}
+.footer .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer .social i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.footer .social i:hover {
+    color: var(--secondary-color);
+}
+/* Footer */
+
+@media screen and (max-width: 992px) {
+    .homepage .header-box {
+        padding-top: 5rem;
+    }
+
+    .homepage .header-box img {
+        width: 400px;
+        display: block;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .homepage .header-box h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .homepage .header-box h1 {
+        font-size: 2.4rem;
+    }
+    .homepage .header-box p {
+        font-size: 14px;
+    }
+    .homepage .header-box img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .homepage .header-box h1 {
+        font-size: 2rem;
+    }
+    .homepage .header-box p {
+        font-size: 12px;
+    }
+}
